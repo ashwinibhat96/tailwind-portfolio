@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,300;0,6..12,400;0,6..12,500;0,6..12,600;0,6..12,700;0,6..12,800;0,6..12,900;0,6..12,1000;1,6..12,200;1,6..12,300;1,6..12,400;1,6..12,500;1,6..12,600;1,6..12,700;1,6..12,800;1,6..12,900;1,6..12,1000&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Tailwind Portfolio</title>
+  </head>
+  <body class="font-nunito">
+    <!-- Intro section -->
+    <div
+      class="h-1/2 lg:h-screen bg-gradient-to-t from-indigo-200 dark:from-slate-800 dark:to-slate-900 relative overflow-hidden"
+    >
+      <!-- navbar -->
+      <nav class="w-full fixed top-0 bg-white z-10 px-20 dark:bg-slate-900">
+        <div class="container mx-auto py-5 flex items-center justify-between">
+          <div class="flex items-center gap-2">
+            <img class="w-8" src="./img/logo.png" alt="" />
+            <span class="text-2xl font-bold text-indigo-900 dark:text-white"
+              >Portwind</span
+            >
+          </div>
+          <ul
+            class="hidden md:flex space-x-10 text-gray-600 font-bold text-sm uppercase dark:text-gray-100"
+          >
+            <li class="hover:text-gray-500">
+              <a href="#">homepage</a>
+            </li>
+            <li class="hover:text-gray-500">
+              <a href="#about me">about me</a>
+            </li>
+            <li class="hover:text-gray-500">
+              <a href="#services">services</a>
+            </li>
+            <li class="hover:text-gray-500">
+              <a href="#works">works</a>
+            </li>
+            <li class="hover:text-gray-500">
+              <a href="#contact">contact</a>
+            </li>
+          </ul>
+          <img
+            id="moon"
+            src="./img/moon.png"
+            class="hidden md:block w-5 cursor-pointer"
+            alt=""
+          />
+          <div id="hamburger" class="space-y-1 md:hidden cursor-pointer z-20">
+            <div class="w-6 h-0.5 bg-black"></div>
+            <div class="w-6 h-0.5 bg-black"></div>
+            <div class="w-6 h-0.5 bg-black"></div>
+          </div>
+          <ul
+            id="menu"
+            class="hidden bg-indigo-900 absolute left-0 top-0 w-full p-10 rounded-b-3xl space-y-10 text-white text-center"
+          >
+            <li>
+              <a id="hLink" href="#">homepage</a>
+            </li>
+            <li>
+              <a id="hLink" href="#about me">about me</a>
+            </li>
+            <li>
+              <a id="hLink" href="#services">services</a>
+            </li>
+            <li>
+              <a id="hLink" href="#works">works</a>
+            </li>
+            <li>
+              <a id="hLink" href="#contact">contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <!-- intro content -->
+      <!-- image -->
+
+      <img
+        class="absolute bottom-0 right-0 lg:left-0 mx-auto h-5/6 object-cover"
+        src="./img/man.png"
+        alt=""
+      />
+
+      <!-- circle -->
+      <div
+        class="hidden lg:block absolute -bottom-1/4 right-0 left-0 mx-auto w-big h-big bg-indigo-900 rounded-full -z-10"
+      ></div>
+      <!-- animated text -->
+      <div
+        class="absolute top-1/3 left-5 text-xl sm:left-10 sm:text-4xl md:left-1/4 md:text-6xl lg:left-5 xl:left-48 xl:text-7xl font-bold"
+      >
+        <span class="text-gray-400">Freelance</span>
+        <p id="text" class="text-red-500"></p>
+      </div>
+      <!--texts-->
+      <div
+        class="hidden lg:flex flex-col gap-5 rounded-lg shadow-lg absolute top-0 bottom-0 m-auto right-10 bg-white dark:bg-slate-900 dark:shadow-slate-800 p-6 h-fit w-1/3"
+      >
+        <h1 class="font-bold text-4xl text-indigo-900">Hi! Hey There</h1>
+        <p class="text-gray-400">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
+          aperiam eaque reiciendis perspiciatis qui temporibus impedit culpa
+          sequi ratione illum!
+        </p>
+        <a
+          href="#contact"
+          class="bg-indigo-700 text-white text-xl w-fit py-2 px-2 rounded-md font-semibold"
+          >Hire Me</a
+        >
+      </div>
+    </div>
+    <!-- about -->
+    <div id="about me" class="px-20 dark:bg-slate-900">
+      <div
+        class="container py-40 mx-auto gap-20 flex flex-col-reverse lg:flex-row items-center"
+      >
+        <!-- left -->
+        <div class="relative">
+          <img
+            class="h-1/4 absolute top-0 left-0 -z-10"
+            src="./img/dots.png"
+            alt=""
+          />
+          <div class="h-full rounded-full overflow-hidden">
+            <img src="./img/portrait.png" alt="" />
+          </div>
+        </div>
+
+        <!-- right -->
+        <div class="my-auto flex flex-col gap-3">
+          <h1 class="text-indigo-600 font-bold dark:text-white">ABOUT ME</h1>
+          <h1 class="text-3xl font-medium dark:text-white">Better Design</h1>
+          <h1 class="text-3xl font-medium dark:text-white">
+            better experience
+          </h1>
+          <p class="text-gray-400">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
+            repellendus molestiae praesentium totam minima suscipit est soluta
+            sapiente quaerat provident.
+          </p>
+          <h2 class="text-gray-400 font-semibold">HTML</h2>
+          <div class="w-full bg-gray-200 h-1.5 rounded-md">
+            <div class="w-full bg-indigo-600 h-1.5 rounded-md"></div>
+          </div>
+          <h2 class="text-gray-400 font-semibold">Javascript</h2>
+          <div class="w-full bg-gray-200 h-1.5 rounded-md">
+            <div class="w-2/3 bg-indigo-600 h-1.5 rounded-md"></div>
+          </div>
+          <h2 class="text-gray-400 font-semibold">React</h2>
+          <div class="w-full bg-gray-200 h-1.5 rounded-md">
+            <div class="w-4/5 bg-indigo-600 h-1.5 rounded-md"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- services -->
+    <div class="px-20 py-20 dark:bg-slate-900" id="services">
+      <div class="container mx-auto">
+        <!-- top -->
+        <div class="flex gap-3 flex-col items-center">
+          <h1 class="text-indigo-600 font-bold dark:text-white">SERVICES</h1>
+          <h1 class="text-3xl dark:text-white">What do I offer?</h1>
+          <p class="w-1/2 text-gray-500 text-center">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos vel,
+            perferendis omnis quis beatae perspiciatis doloribus sed impedit.
+            Reiciendis, rerum!
+          </p>
+        </div>
+
+        <!-- bottom -->
+        <div class="flex sm:p-0 flex-wrap px-5">
+          <!-- card -->
+          <div
+            class="w-full md:w-4/12 shadow-xl rounded-lg p-5 my-3 md:my-10 flex flex-col gap-3"
+          >
+            <img class="w-10" src="./img/icon.png" alt="" />
+            <h1 class="font-medium text-lg dark:text-white">UI/UX Design</h1>
+            <p class="text-gray-400">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore
+              accusantium ratione quidem ipsam dolorum rerum?
+            </p>
+            <a class="text-indigo-600 font-semibold text-sm" href=""
+              >Read more</a
+            >
+          </div>
+          <div
+            class="w-full md:w-4/12 shadow-xl rounded-lg p-5 my-3 md:my-10 flex flex-col gap-3"
+          >
+            <img class="w-10" src="./img/icon.png" alt="" />
+            <h1 class="font-medium text-lg">UI/UX Design</h1>
+            <p class="text-gray-400">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore
+              accusantium ratione quidem ipsam dolorum rerum?
+            </p>
+            <a class="text-indigo-600 font-semibold text-sm" href=""
+              >Read more</a
+            >
+          </div>
+          <div
+            class="w-full md:w-4/12 shadow-xl rounded-lg p-5 my-3 md:my-10 flex flex-col gap-3"
+          >
+            <img class="w-10" src="./img/icon.png" alt="" />
+            <h1 class="font-medium text-lg">UI/UX Design</h1>
+            <p class="text-gray-400">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore
+              accusantium ratione quidem ipsam dolorum rerum?
+            </p>
+            <a class="text-indigo-600 font-semibold text-sm" href=""
+              >Read more</a
+            >
+          </div>
+          <div
+            class="w-full md:w-4/12 shadow-xl rounded-lg p-5 my-3 md:my-10 flex flex-col gap-3"
+          >
+            <img class="w-10" src="./img/icon.png" alt="" />
+            <h1 class="font-medium text-lg">UI/UX Design</h1>
+            <p class="text-gray-400">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore
+              accusantium ratione quidem ipsam dolorum rerum?
+            </p>
+            <a class="text-indigo-600 font-semibold text-sm" href=""
+              >Read more</a
+            >
+          </div>
+          <div
+            class="w-full md:w-4/12 shadow-xl rounded-lg p-5 my-3 md:my-10 flex flex-col gap-3"
+          >
+            <img class="w-10" src="./img/icon.png" alt="" />
+            <h1 class="font-medium text-lg">UI/UX Design</h1>
+            <p class="text-gray-400">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore
+              accusantium ratione quidem ipsam dolorum rerum?
+            </p>
+            <a class="text-indigo-600 font-semibold text-sm" href=""
+              >Read more</a
+            >
+          </div>
+          <div
+            class="w-full md:w-4/12 shadow-xl rounded-lg p-5 my-3 md:my-10 flex flex-col gap-3"
+          >
+            <img class="w-10" src="./img/icon.png" alt="" />
+            <h1 class="font-medium text-lg">UI/UX Design</h1>
+            <p class="text-gray-400">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore
+              accusantium ratione quidem ipsam dolorum rerum?
+            </p>
+            <a class="text-indigo-600 font-semibold text-sm" href=""
+              >Read more</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- portfolio -->
+    <div id="works" class="px-20 py-20 dark:bg-slate-900">
+      <div class="container mx-auto">
+        <!-- top -->
+        <div class="flex gap-3 flex-col items-center">
+          <h1 class="text-indigo-600 font-bold dark:text-white">PORTFOLIO</h1>
+          <h1 class="text-3xl dark:text-white">Works and Projects</h1>
+          <p class="w-1/2 text-gray-500 text-center">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos vel,
+            perferendis omnis quis beatae perspiciatis doloribus sed impedit.
+            Reiciendis, rerum!
+          </p>
+        </div>
+
+        <!-- bottom -->
+        <div class="flex sm:p-0 flex-wrap justify-between">
+          <!-- card -->
+          <div
+            class="md:w-5/12 lg:w-1/5 shadow-xl rounded-lg my-3 md:my-10 m-1"
+          >
+            <img src="./img/Screenshot 2024-02-01 164240.png" alt="" />
+          </div>
+          <div
+            class="w-full md:w-5/12 lg:w-1/5 shadow-xl rounded-lg my-3 md:my-10 m-1"
+          >
+            <img src="./img/Screenshot 2024-01-01 155932.png" alt="" />
+          </div>
+          <div
+            class="w-full md:w-5/12 lg:w-1/5 shadow-xl rounded-lg my-3 md:my-10 m-1"
+          >
+            <img src="./img/Screenshot 2024-01-01 160044.png" alt="" />
+          </div>
+          <div
+            class="w-full md:w-5/12 lg:w-1/5 shadow-xl rounded-lg my-3 md:my-10 m-1"
+          >
+            <img src="./img/Screenshot 2024-01-01 160142.png" alt="" />
+          </div>
+          <div
+            class="w-full md:w-5/12 lg:w-1/5 shadow-xl rounded-lg my-3 md:my-10 m-1"
+          >
+            <img src="./img/Screenshot 2024-01-01 160250.png" alt="" />
+          </div>
+          <div
+            class="w-full md:w-5/12 lg:w-1/5 shadow-xl rounded-lg my-3 md:my-10 m-1"
+          >
+            <img src="./img/Screenshot 2024-01-01 160412.png" alt="" />
+          </div>
+          <div
+            class="w-full md:w-4/12 lg:w-1/5 shadow-xl rounded-lg my-3 md:my-10 m-1"
+          >
+            <img src="./img/Screenshot 2024-02-01 162903.png" alt="" />
+          </div>
+          <div
+            class="w-full md:w-4/12 lg:w-1/5 shadow-xl rounded-lg my-3 md:my-10 m-1"
+          >
+            <img src="./img/Screenshot 2024-02-01 162941.png" alt="" />
+          </div>
+          <div
+            class="w-full md:w-4/12 lg:w-1/5 shadow-xl rounded-lg my-3 md:my-10 m-1"
+          >
+            <img src="./img/Screenshot 2024-02-01 163019.png" alt="" />
+          </div>
+          <div
+            class="w-full md:w-4/12 lg:w-1/5 shadow-xl rounded-lg my-3 md:my-10 m-1"
+          >
+            <img src="./img/Screenshot 2024-02-01 163041.png" alt="" />
+          </div>
+          <div
+            class="w-full md:w-4/12 lg:w-1/5 shadow-xl rounded-lg my-3 md:my-10 m-1"
+          >
+            <img src="./img/Screenshot 2024-02-01 163124.png" alt="" />
+          </div>
+          <div
+            class="w-full md:w-4/12 lg:w-1/5 shadow-xl rounded-lg my-3 md:my-10 m-1"
+          >
+            <img src="./img/Screenshot 2024-02-01 163153.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- contact -->
+    <div class="p-20 dark:bg-slate-900" id="contact">
+      <div class="container mx-auto">
+        <!-- top -->
+        <div class="flex gap-3 flex-col items-center my-10">
+          <h1 class="text-indigo-600 font-bold dark:text-white">CONTACT</h1>
+          <h1 class="text-3xl dark:text-white">Have Questions?</h1>
+          <p class="w-1/2 text-gray-500 text-center">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos vel,
+          </p>
+        </div>
+        <!-- bottom -->
+        <form class="mt-5 p-8 flex flex-col gap-5 items-center">
+          <input
+            class="p-2 w-full md:w-1/2 ring-1 ring-indigo-300 rounded-sm dark:bg-slate-800 dark:ring-0 dark:text-white"
+            type="text"
+            placeholder="Name Surname"
+          />
+          <input
+            class="p-2 w-full md:w-1/2 ring-1 ring-indigo-300 rounded-sm dark:bg-slate-800 dark:ring-0 dark:text-white"
+            type="email"
+            placeholder="Email"
+          />
+          <textarea
+            class="p-2 w-full md:w-1/2 ring-1 ring-indigo-300 rounded-sm dark:bg-slate-800 dark:ring-0 dark:text-white"
+            cols="30"
+            rows="10"
+            placeholder="Message..."
+          ></textarea>
+          <button
+            class="px-3 py-2 w-1/2 md:w-1/2 bg-indigo-800 text-white rounded-md shadow-lg cursor-pointer"
+          >
+            Submit
+          </button>
+        </form>
+      </div>
+    </div>
+    <!-- footer -->
+
+    <div class="px-20 w-full bg-gray-800 z-10">
+      <div class="container mx-auto py-5 flex items-center justify-between">
+        <div class="flex items-center gap-2">
+          <img class="w-8" src="./img/logo.png" alt="" />
+          <span class="text-2xl font-bold text-white">Portwind</span>
+        </div>
+        <span class="hidden md:block font-medium text-white"
+          >© 2024 Portwind. Design with ❤︎ by AshDev</span
+        >
+
+        <div class="flex gap-2">
+          <img class="w-4 cursor-pointer" src="./img/facebook.png" alt="" />
+          <img class="w-4 cursor-pointer" src="./img/instagram.png" alt="" />
+          <img class="w-4 cursor-pointer" src="./img/twitter.png" alt="" />
+          <img class="w-4 cursor-pointer" src="./img/linkedin.png" alt="" />
+        </div>
+      </div>
+    </div>
+    <script src="./app.js"></script>
+    <script src="./autotyping.js"></script>
+  </body>
+</html>
